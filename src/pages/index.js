@@ -243,9 +243,9 @@ export default function Home() {
           </h2>
           <div className="w-12 h-1 bg-[#39429b] rounded-full mx-auto mt-2"></div>
 
-          <div className="flex flex-col space-y-5 lg:space-y-0 lg:flex-row max-w-3xl mx-auto mt-10 p-5 lg:p-0">
-            <div className="w-full lg:w-1/3">
-              <img src="/sample-police.jpeg" alt="" className="rounded-xl" />
+          <div className="flex flex-col space-y-5 lg:space-y-0 lg:flex-row max-w-sm lg:max-w-3xl mx-auto mt-10 p-5 lg:p-0">
+            <div className="w-full lg:w-1/3 flex justify-center items-end">
+              <img src="/sample-police.jpeg" alt="" className="rounded-xl " />
             </div>
             <div className="w-full lg:w-2/3 ">
               <p className="text-[#413d4a] opacity-90">
@@ -284,8 +284,8 @@ export default function Home() {
           </h2>
           <div className="w-12 h-1 bg-[#39429b] rounded-full mx-auto mt-2"></div>
 
-          <div className="flex flex-row max-w-3xl mx-auto mt-10 space-x-2">
-            <div className="w-1/2">
+          <div className="flex flex-col lg:flex-row max-w-xs lg:max-w-3xl mx-auto mt-10 space-x-0 lg:space-x-2 space-y-2 lg:space-y-0">
+            <div className="w-full lg:w-1/2">
               <div className="bg-[#f8f8f8]">
                 <img src="/group.jpeg" alt="" className="" />
                 <h3 className="text-[#413d4a] font-bold p-2">
@@ -298,7 +298,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2">
               <div className="bg-[#f8f8f8] p-2">
                 <h3 className="text-[#413d4a] font-bold">Suspicious Objects</h3>
                 <p className="text-[#413d4a] opacity-90 mt-2">
@@ -335,8 +335,8 @@ export default function Home() {
           </h2>
           <div className="w-12 h-1 bg-[#39429b] rounded-full mx-auto mt-2"></div>
 
-          <div className="flex flex-row mx-auto space-x-5 max-w-5xl mt-10">
-            <div className="w-[376px] bg-white shadow-lg">
+          <div className="flex flex-col lg:flex-row space-y-5 lg:space-y-0 space-x-0 lg:space-x-5 max-w-5xl mt-10 mx-auto justify-center items-center">
+            <div className="w-[376px] bg-white shadow-lg ">
               <img
                 src="/social1.jpeg"
                 alt=""
@@ -396,7 +396,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="w-[376px] bg-white shadow-lg">
+            <div className="w-[376px] bg-white shadow-lg ">
               <img
                 src="/social3.jpeg"
                 alt=""
