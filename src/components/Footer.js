@@ -1,39 +1,50 @@
 import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-[#383540] text-white px-32">
+      <div className="bg-[#383540] text-white px-10 lg:px-32">
         <div className="flex flex-col lg:flex-row justify-between space-y-2 lg:space-y-0 py-10 border-b border-gray-600">
           <div className="">
             <div className="flex justify-center">
               <img src="/digital-india.png" alt="" className=" h-12" />
             </div>
-            <p className="mt-2 text-center">digitizeindia.gov.in</p>
+            <p className="mt-2 text-center">
+              <Link href={"/"}>digitizeindia.gov.in</Link>
+            </p>
           </div>
           <div>
             <div className="flex justify-center">
               <img src="/startup.png" alt="" className="h-12" />
             </div>
-            <p className="mt-2 text-center">startupindia.gov.in</p>
+            <p className="mt-2 text-center">
+              <Link href={"/"}>startupindia.gov.in</Link>
+            </p>
           </div>
           <div>
             <div className="flex justify-center">
               <img src="/india-gov.png" alt="" className=" h-12" />
             </div>
-            <p className="mt-2 text-center">india.gov.in</p>
+            <p className="mt-2 text-center">
+              <Link href={"/"}>india.gov.in</Link>
+            </p>
           </div>
           <div>
             <div className="flex justify-center">
               <img src="/india-gov.png" alt="" className=" h-12" />
             </div>
-            <p className="mt-2 text-center">pib.nic.in</p>
+            <p className="mt-2 text-center">
+              <Link href={"/"}>pib.nic.in</Link>
+            </p>
           </div>
           <div>
             <div className="flex justify-center">
               <img src="/swachha-bharat.png" alt="" className="h-12 " />
             </div>
-            <p className="mt-2 text-center">swachhbharatmission.gov.in</p>
+            <p className="mt-2 text-center">
+              <Link href={"/"}>swachhbharatmission.gov.in</Link>
+            </p>
           </div>
         </div>
 

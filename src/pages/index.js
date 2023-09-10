@@ -4,19 +4,19 @@ import Link from "next/link";
 import Footer from "@/components/Footer";
 import Slider from "@/components/Slider";
 import Phone from "@/components/Phone";
+import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
 
 export default function Home() {
   return (
     <div>
       <Head>
-        {/* <style>
-          {`
-            .custom-clip-path {
-              clip-path: polygon(46% 0, 80% 0%, 100% 0, 100% 58%, 52% 100%, 20% 100%, 0% 80%, 0 38%);
-            }
-          `}
-        </style> */}
+        <meta charSet="UTF-8" />
+        <link rel="icon" href="" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Demo website for Maharastra Police" />
+        <title>Home | Maharastra Police</title>
       </Head>
       <main>
         <div className="bg-[#f8f8f8]">
@@ -100,29 +100,7 @@ export default function Home() {
 
         {/* navbar  */}
 
-        <nav className="bg-[#5e6ab0] text-white py-5 sticky hidden lg:block top-16 z-50">
-          <ul className="flex flex-row mx-36 justify-between ">
-            <li>
-              <Link href={"/"}>Home</Link>
-            </li>
-            <li className="opacity-70">
-              <Link href={"/"}>Reports</Link>
-            </li>
-
-            <li className="opacity-70">
-              <Link href={"/"}>Tell Us About</Link>
-            </li>
-            <li className="opacity-70">
-              <Link href={"/"}>Citizens Corner</Link>
-            </li>
-            <li className="opacity-70">
-              <Link href={"/"}>Police Corner</Link>
-            </li>
-            <li className="opacity-70">
-              <Link href={"/"}>About Us</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         {/* cards */}
 
@@ -264,7 +242,7 @@ export default function Home() {
                 growth and development.
               </p>
               <div className="text-[#39429b] text-sm font-bold mt-3">
-                Read More
+                <Link href={"/"}>Read More</Link>
               </div>
 
               <div className="mt-3">
@@ -337,7 +315,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-5 mx-auto font-semibold border-[#39429b] text-[#39429b] border w-40 h-10 flex justify-center items-center rounded-md">
+          <div className="mt-5 cursor-pointer mx-auto font-semibold border-[#39429b] text-[#39429b] border w-40 h-10 flex justify-center items-center rounded-md">
             Show All
           </div>
         </div>
