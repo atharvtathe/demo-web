@@ -43,7 +43,7 @@ const Slider = () => {
           <img src="/slider1.jpeg" alt="forth image" />
         </div>
         <div>
-          <img src="/slider2.jpeg" alt="fifth image" className="h-36" />
+          <img src="/slider2.jpeg" alt="fifth image" />
         </div>
       </Carousel>
     </div>

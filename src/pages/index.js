@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "../../components/Footer";
-import Slider from "../../components/Slider";
-import Phone from "../../components/Phone";
+import Footer from "@/components/Footer";
+import Slider from "@/components/Slider";
+import Phone from "@/components/Phone";
 import React, { useState } from "react";
 
 export default function Home() {
