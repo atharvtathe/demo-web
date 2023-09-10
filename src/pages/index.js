@@ -2,6 +2,9 @@ import Image from "next/image";
 import Head from "next/head";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import Slider from "../../components/Slider";
+import Phone from "../../components/Phone";
+import React, { useState } from "react";
 
 export default function Home() {
   return (
@@ -237,7 +240,7 @@ export default function Home() {
 
         {/* our mission */}
 
-        <div className="py-16">
+        <div className="py-16 ">
           <h2 className="text-2xl text-center font-bold text-[#413d4a]">
             Our Mission
           </h2>
@@ -273,6 +276,18 @@ export default function Home() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Martyrs */}
+
+        <div className="py-16 bg-[#f8f8f8]">
+          <h2 className="text-2xl text-center font-bold text-[#413d4a]">
+            Martyrs
+          </h2>
+          <div className="w-12 h-1 bg-[#39429b] rounded-full mx-auto mt-2"></div>
+          <div className="max-w-4xl mx-auto py-10 mt-5">
+            <Slider />
           </div>
         </div>
 
@@ -427,99 +442,7 @@ export default function Home() {
         </div>
       </main>
 
-      {/* <div className="bg-[#383540] text-white px-32">
-        <div className="flex flex-row justify-between py-10 border-b border-gray-600">
-          <div className="">
-            <div className="flex justify-center">
-              <img src="/digital-india.png" alt="" className=" h-12" />
-            </div>
-            <p className="mt-2">digitizeindia.gov.in</p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <img src="/startup.png" alt="" className="h-12" />
-            </div>
-            <p className="mt-2">startupindia.gov.in</p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <img src="/india-gov.png" alt="" className=" h-12" />
-            </div>
-            <p className="mt-2">india.gov.in</p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <img src="/india-gov.png" alt="" className=" h-12" />
-            </div>
-            <p className="mt-2">pib.nic.in</p>
-          </div>
-          <div>
-            <div className="flex justify-center">
-              <img src="/swachha-bharat.png" alt="" className="h-12 " />
-            </div>
-            <p className="mt-2 text-center">swachhbharatmission.gov.in</p>
-          </div>
-        </div>
-
-        <div className="flex flex-row mt-10 pb-10 justify-between border-b border-gray-600">
-          <div>
-            <p className="font-semibold text-xl">Mumbai Police</p>
-            <div className="flex flex-row space-x-5 mt-4">
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Contact us</li>
-                <li>Press release</li>
-                <li>About us</li>
-                <li>Cookies</li>
-              </ul>
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Disclaimer</li>
-                <li>Sitemap</li>
-                <li>Important links</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <p className="font-semibold text-xl">Information & Services</p>
-            <div className="flex flex-row space-x-5 mt-4">
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Crime Prevention</li>
-                <li>Crime Stats</li>
-                <li>Report</li>
-                <li>Downloads</li>
-              </ul>
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Tell us about</li>
-                <li>Important website links</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <p className="font-semibold text-xl">Quick Links</p>
-            <div className="flex flex-row space-x-5 mt-4">
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Online complains</li>
-                <li>Tenders</li>
-                <li>Emergency No</li>
-                <li>Your police station</li>
-              </ul>
-            </div>
-          </div>
-          <div>
-            <div className="flex flex-row space-x-5 mt-4">
-              <ul className="flex flex-col space-y-2 text-sm">
-                <li>Whats App : 8454999999</li>
-                <li>Alert Citizen : 103</li>
-                <li>Control Room : 100</li>
-                <li>Elder Line : 1090</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-row justify-between text-sm py-6">
-          <div>Copyright © 2018 Mumbai Police</div>
-          <div>Last Update: 17/08/2018 02:12:00 | Visitors : 40,000</div>
-        </div>
-      </div> */}
+      <Phone />
 
       <Footer />
     </div>
